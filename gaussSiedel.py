@@ -15,6 +15,7 @@ def gauss_seidel(A, b, x0, tol, max_iter):
             break
     
     return x, k + 1
+
 A = np.array([[4,-1, 0], [-1, 4, -1], [0, -1, 3]])
 b = np.array([12, -1, 0])
 x0 = np.array([0, 0, 0])
