@@ -58,10 +58,10 @@ for i in range(n):
 
 x_val = float(input("Enter the value of x to estimate f(x): "))
 
-# Determine whether to use forward or backward interpolation
 if abs(x_val - x[0]) < abs(x_val - x[n - 1]):
     result = forward_interpolation(x, y, x_val)
     print(f"The estimated value of f({x_val}) using forward interpolation is: {result}")
 else:
     result = backward_interpolation(x, y, x_val)
     print(f"The estimated value of f({x_val}) using backward interpolation is: {result}")
+ 
