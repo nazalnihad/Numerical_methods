@@ -11,6 +11,7 @@ def forward_difference(x, y, n):
     for i in range(1, n):
         for j in range(n - i):
             table[j][i] = table[j + 1][i - 1] - table[j][i - 1]
+            print(table)
     
     return table
 

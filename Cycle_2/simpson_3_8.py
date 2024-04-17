@@ -1,7 +1,7 @@
 import math
 
 def func(x):
-    return math.log(x)
+    return math.exp(-x)
 
 def calc_simpson_3_8_integral(lower, upper, n):
     if n % 3 != 0:
@@ -31,5 +31,5 @@ def calc_simpson_3_8_integral(lower, upper, n):
     result = (3 * h / 8) * result
     return result
 
-answer = calc_simpson_3_8_integral(4, 5.2, 6)
-print(answer)
+answer = calc_simpson_3_8_integral(0, 2, 6)
+print(f"integral value of the equation using simpson 3/8 is : {answer}")

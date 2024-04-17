@@ -1,7 +1,7 @@
 import math
 
 def func(x):
-    return math.log(x)
+    return math.exp(-x)
 
 def calc_simpson_integral(lower,upper,n):
     h = (upper-lower)/n
@@ -32,5 +32,5 @@ def calc_simpson_integral(lower,upper,n):
 
     return result
 
-answer = calc_simpson_integral(4,5.2,6)
-print(answer)
+answer = calc_simpson_integral(0,2,4)
+print(f"integral value of the equation using simpson 1/3 is : {answer}")
